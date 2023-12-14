@@ -9,7 +9,7 @@ const Skills = () => {
                 <h1 className="section-heading">
                     Skills
                 </h1>
-                <div className="flex flex-row items-start justify-center">
+                <div className="flex flex-row items-start justify-start flex-wrap">
                     <div className="flex flex-col mx-3">
                         <h5 className="tertiary-heading">
                             Programming Languages
