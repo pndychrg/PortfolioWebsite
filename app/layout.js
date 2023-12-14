@@ -11,7 +11,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navbar />
-        <main className="h-screen w-screen font-poppins p-4">{children}</main>
+        <main className="h-screen w-screen font-poppins p-4 mt-12">
+          {children}
+        </main>
       </body>
     </html>
   );

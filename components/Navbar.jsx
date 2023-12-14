@@ -8,7 +8,7 @@ const Navbar = () => {
     const [toggleDropdown, setToggleDropdown] = useState(false);
 
     return (
-        <nav className="flex text-lg items-center justify-between px-6 md:px-10  py-5 font-montserrat">
+        <nav className="flex text-lg items-center justify-between px-6 md:px-10  py-5 fixed w-full top-0 font-montserrat bg-white ">
             <Link href="/" className=" flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold">
                 Chirag Pandey
             </Link>
