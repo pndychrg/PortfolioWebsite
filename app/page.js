@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <About id="About" />
+      <About />
       <Skills />
       <Education />
       <Projects />

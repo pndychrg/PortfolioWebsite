@@ -1,21 +1,10 @@
 'use client';
-import { motion } from "framer-motion";
+import { delay, motion, stagger } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 
-const dropdownVariants = {
-    hidden: {
-        opacity: 0,
-    },
-    visible: {
-        opacity: 1,
-        transition: {
-            duration: 0.5,
-            ease: "easeOut",
-        }
-    }
 
-}
+
 
 const Navbar = () => {
 
@@ -25,7 +14,11 @@ const Navbar = () => {
         <motion.nav
             initial={{ y: -250 }}
             animate={{ y: 0 }}
-            transition={{ delay: 0.2, type: 'spring', stiffness: 70 }}
+            transition={{
+                delay: 0.5,
+                type: 'spring',
+                stiffness: 70,
+            }}
             className="flex text-lg items-center justify-between px-6 md:px-10  py-5 fixed w-full top-0 font-montserrat bg-slate-100 z-50">
             <Link href="/" className="  cursor-pointer pb-1.5 transition-all hover:font-bold">
                 Chirag Pandey
@@ -53,7 +46,7 @@ const Navbar = () => {
                         opacity: 1
                     }}
                     transition={{
-                        duration: 1,
+                        duration: 0.5,
                         ease: "linear"
                     }}
                     className="absolute  right-0 flex flex-col mt-3 gap-2 justify-center items-center me-3 p-4 bg-white rounded-lg shadow-lg ">
