@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className="hidden h-full gap-12 lg:flex">
                 <Link href="#About" className="cursor-pointer pb-1.5 transition-all hover:font-bold">About</Link>
                 <Link href="#Project" className="cursor-pointer pb-1.5 transition-all hover:font-bold">Projects</Link>
-                <Link href="/" className="  cursor-pointer pb-1.5 transition-all hover:font-bold">Resume</Link>
+                <Link href="https://drive.google.com/file/d/1ykDj1j0Zb3YCTLMGb7e_Xa7qon9YWk-I/view?usp=sharing" className="  cursor-pointer pb-1.5 transition-all hover:font-bold" target="_blank">Resume</Link>
             </div>
             <div className="lg:hidden ">
                 <button onClick={() => (setToggleDropdown(!toggleDropdown))}>
@@ -24,7 +24,7 @@ const Navbar = () => {
                 {toggleDropdown && <div className="absolute right-0 flex flex-col mt-3 w-full p-5 r min-w-[210px]  gap-2 justify-end items-end">
                     <Link href="#About" className="  cursor-pointer pb-1.5 transition-all hover:font-bold">About</Link>
                     <Link href="#Project" className="  cursor-pointer pb-1.5 transition-all hover:font-bold">Projects</Link>
-                    <Link href="/" className="  cursor-pointer pb-1.5 transition-all hover:font-bold">Resume</Link>
+                    <Link href="https://drive.google.com/file/d/1ykDj1j0Zb3YCTLMGb7e_Xa7qon9YWk-I/view?usp=sharing" target="_blank" className="  cursor-pointer pb-1.5 transition-all hover:font-bold">Resume</Link>
                 </div>}
             </div>
         </nav>

@@ -17,7 +17,7 @@ const Hero = () => {
                     <p className='text-slate-400'>It's been a pleasure</p>
                 </div>
                 <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] "
-                    style={{ backgroundImage: 'url("/profile.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}
+                    style={{ backgroundImage: 'url("/img/profile.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}
                 >
                 </div>
             </div>
