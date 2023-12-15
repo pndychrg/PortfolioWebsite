@@ -1,7 +1,7 @@
 import AnimatedAboutImage from "./animated/AnimatedAboutImage"
 const About = () => {
     return (
-        <section className="py-3 mt-3">
+        <section className="py-3 mt-3" id="About">
             <div className="flex flex-col items-center justify-around">
                 <h1 className="section-heading">
                     ABOUT ME
