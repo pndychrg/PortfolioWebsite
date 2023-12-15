@@ -1,4 +1,4 @@
-import Image from "next/image"
+import AnimatedAboutImage from "./animated/AnimatedAboutImage"
 const About = () => {
     return (
         <section className="py-3 mt-3">
@@ -7,10 +7,9 @@ const About = () => {
                     ABOUT ME
                 </h1>
                 <div className="flex flex-row items-center justify-center flex-wrap">
-                    <div className="rounded-full w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] mx-3 my-3 relative"
-                        style={{ backgroundImage: 'url("/svg/blob.svg")', backgroundSize: 'cover', backgroundPosition: 'center' }}
+                    <div className="rounded-full w-[350px] h-[350px] lg:w-[500px] lg:h-[500px] mx-3 my-3 relative"
                     >
-                        <Image src="/img/about_bg.png" layout="fill" objectFit="cover" alt="logo" />
+                        <AnimatedAboutImage />
                     </div>
                     <div className="w-[350px] md:w-[700px] mx-3 ">
                         <h3 className="secondary-heading">
