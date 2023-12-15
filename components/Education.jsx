@@ -8,7 +8,7 @@ const Education = () => {
             </h1>
             <div className="flex flex-col items-center justify-center flex-wrap">
                 {education.map((details, index) => (
-                    <div key={index} className="max-w-sm md:max-w-max flex flex-col  md:p-5 p-2 md:m-3 m-2 rounded overflow-hidden border hover-text-bold  hover:scale-[1.02] transition-all border-blue-100 ">
+                    <div key={index} className="card-div">
                         <div className="flex flex-row flex-wrap justify-center">
                             {details?.logo &&
                                 <div className="md:mx-2 md:h-40 md:w-40 h-20 w-20 relative ">
@@ -34,24 +34,26 @@ const Education = () => {
                             </div>
                         </div>
                     </div>))}
-                <hr />
-                <h5 className="tertiary-heading">
-                    Certificates
-                </h5>
-                {
-                    certificates.map((details, index) => (<div key={index}>
-                        <p className="body-text">
-                            {details.name}
-                            <span>({details.issueDate})</span>
-                            <br />
-                            <span className="flex flex-row">
-                                {/* make the logo red */}
-                                <Image alt="logo" src={details.logo} width={30} height={30} />
-                                {details.issuer}
-                            </span>
-                        </p>
-                    </div>))
-                }
+
+                <div className="flex flex-col items-center justify-center my-4">
+                    <h5 className="secondary-heading">
+                        Certificates
+                    </h5>
+                    {
+                        certificates.map((details, index) => (
+                            <div key={index} className="card-div">
+                                <p className="body-text">
+                                    {details.name}
+                                    <span>({details.issueDate})</span>
+                                    <br />
+                                    <span className="flex flex-row">
+                                        {`By ${details.issuer}`}
+                                    </span>
+                                </p>
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
         </section>
     )

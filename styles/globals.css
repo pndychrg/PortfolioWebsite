@@ -17,7 +17,7 @@ html{
 }
 
 .tertiary-heading{
-  @apply font-poppins text-slate-600 text-2xl md:text-3xl
+  @apply font-poppins text-slate-600 text-xl md:text-3xl
 }
 
 .body-text{
@@ -25,6 +25,10 @@ html{
 }
 
 .hover-text-bold{
-  @apply hover:font-bold hover:text-slate-800 cursor-default
+  @apply hover:font-bold hover:text-slate-800 
 
+}
+
+.card-div{
+  @apply max-w-sm md:max-w-max flex flex-col  md:p-5 p-2 md:m-3 m-2 rounded overflow-hidden border hover-text-bold  hover:scale-[1.02] transition-all border-blue-100 
 }
