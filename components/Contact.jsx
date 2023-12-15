@@ -2,9 +2,9 @@ import { contact, personalDetails } from "@/constants/contact"
 import Image from "next/image"
 const Contact = () => {
     return (
-        <section className="flex flex-col justify-center items-center">
+        <section className="flex flex-col justify-center items-center m-2" >
             <h1 className="section-heading">Contact</h1>
-            <div className="flex flex-row">
+            <div className="flex flex-row flex-wrap">
                 <div className="flex flex-col ">
                     {contact.map((cont, index) => (
                         <div key={index} className="cursor-pointer">

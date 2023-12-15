@@ -32,3 +32,7 @@ html{
 .card-div{
   @apply max-w-sm md:max-w-max flex flex-col  md:p-5 p-2 md:m-3 m-2 rounded overflow-hidden border hover-text-bold  hover:scale-[1.02] transition-all border-blue-100 
 }
+
+.shadow-crescendo{
+  @apply shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]
+}
