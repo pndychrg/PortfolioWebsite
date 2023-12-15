@@ -2,6 +2,7 @@
 import { delay, motion, stagger } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
+import MenuButton from "./animated/MenuButton";
 
 
 
@@ -31,9 +32,10 @@ const Navbar = () => {
             </div>
             {/* Navbar in small screens */}
             <div className="lg:hidden ">
-                <button onClick={() => (setToggleDropdown(!toggleDropdown))}>
-                    Menu
-                </button>
+                <MenuButton
+                    isOpen={toggleDropdown}
+                    onClick={() => setToggleDropdown(!toggleDropdown)}
+                />
                 {toggleDropdown && <motion.div
                     key="dropdown"
                     initial={{
