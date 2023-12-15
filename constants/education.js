@@ -6,6 +6,7 @@ export const education = [
     startYear: "2020",
     endYear: "2024",
     field: "Computer Science & Technology",
+    logo: "/svg/riet.svg",
   },
   {
     degree: "Diploma in Programming",
@@ -14,6 +15,7 @@ export const education = [
     startYear: "2020",
     endYear: "2024",
     field: "Programming and Data Science",
+    logo: "/svg/iitm.jpeg",
   },
   {
     degree: "High Secondary Education",
@@ -22,6 +24,7 @@ export const education = [
     startYear: "2019",
     field: "Physics Chemistry Maths",
     endYear: "2020",
+    logo: "/svg/gnps.avif",
   },
   {
     degree: "Secondary Education",
@@ -29,6 +32,7 @@ export const education = [
     score: "94.5%",
     startYear: "2017",
     endYear: "2018",
+    logo: null,
   },
 ];
 
@@ -37,10 +41,12 @@ export const certificates = [
     name: "Introduction to Data Science in Python",
     issuer: "Coursera",
     issueDate: "Aug 2021",
+    logo: "/svg/coursera.svg",
   },
   {
     name: "Full Stack Development",
     issuer: "Internshala",
     issueDate: "Jav 2021",
+    logo: "/svg/internshala.png",
   },
 ];

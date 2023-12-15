@@ -1,5 +1,5 @@
 import { experience } from "@/constants/experience"
-
+import Image from "next/image"
 const Experience = () => {
     return (
         <section className="flex flex-col justify-center items-center">
@@ -11,7 +11,8 @@ const Experience = () => {
                             {exp.position}
                             <span className="text-lg">({exp.start}-{exp.end})</span>
                         </h5>
-                        <p className="body-text">
+                        <p className="body-text flex flex-row">
+                            <Image alt="logo" src={exp.logo} width={40} height={40} />
                             {exp.company}
                             <br />
                         </p>

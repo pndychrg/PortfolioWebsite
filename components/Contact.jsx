@@ -1,5 +1,5 @@
 import { contact, personalDetails } from "@/constants/contact"
-
+import Image from "next/image"
 const Contact = () => {
     return (
         <section className="flex flex-col justify-center items-center">
@@ -9,15 +9,22 @@ const Contact = () => {
                     {contact.map((cont, index) => (
                         <div key={index}>
                             <p className="body-text">
-                                <a href={cont.url} target="_blank">{cont.platform}</a>
+                                <a href={cont.url} target="_blank" className="flex flex-row">
+                                    <Image src={cont.logo} alt="logo" height={30} width={30} />
+                                    {cont.platform}
+                                </a>
                             </p>
                         </div>))}
                 </div>
                 <div className="flex flex-col body-text">
-                    <p >
+                    <span className="flex flex-row">
+                        <Image src="/svg/phonenumber.svg" alt="logo" height={30} width={30} />
                         {personalDetails.phoneNumber}
-                    </p>
-                    {personalDetails.email}
+                    </span>
+                    <span className="flex flex-row">
+                        <Image src="/svg/email.svg" alt="logo" height={30} width={30} />
+                        {personalDetails.email}
+                    </span>
                 </div>
             </div>
         </section>
