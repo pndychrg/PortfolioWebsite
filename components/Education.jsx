@@ -1,5 +1,5 @@
 import { certificates, education } from "@/constants/education"
-
+import Image from "next/image"
 const Education = () => {
     return (
         <section className="flex flex-col items-center justify-center">
@@ -16,8 +16,9 @@ const Education = () => {
                             </span>
                         </h5>
                         <p className="body-text">
-                            {details.institute}
-                            <br />
+                            <span className="flex flex-row">
+                                {details?.logo && <Image alt="logo" src={details?.logo} height={30} width={30} />} {details.institute}
+                            </span>
                             {details.score}
                             <br />
                             <span className="text-lg">
@@ -36,7 +37,11 @@ const Education = () => {
                             {details.name}
                             <span>({details.issueDate})</span>
                             <br />
-                            {details.issuer}
+                            <span className="flex flex-row">
+                                {/* make the logo red */}
+                                <Image alt="logo" src={details.logo} width={30} height={30} />
+                                {details.issuer}
+                            </span>
                         </p>
                     </div>))
                 }

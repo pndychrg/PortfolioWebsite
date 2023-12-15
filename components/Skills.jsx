@@ -1,5 +1,5 @@
 import { skills } from "@/constants/skills"
-
+import Image from "next/image"
 const Skills = () => {
 
 
@@ -17,7 +17,10 @@ const Skills = () => {
                         <ul className="body-text">
                             {
                                 skills.programmingLanguages.map((lang, index) => (
-                                    <li key={index}>{lang.name}</li>
+                                    <li key={index} className="flex flex-row">
+                                        <Image src={lang.logo} height={30} width={30} alt="logo" />
+                                        {lang.name}
+                                    </li>
                                 ))}
                         </ul>
                     </div>
@@ -26,21 +29,38 @@ const Skills = () => {
                             Frameworks
                         </h5>
                         <ul className="body-text">
-                            {skills.frameworks.frontend.map((frame, index) => (<li key={index}>{frame.name}</li>))}
-                            {skills.frameworks.backend.map((frame, index) => (<li key={index}>{frame.name}</li>))}
+                            {skills.frameworks.frontend.map((frame, index) => (
+                                <li key={index} className="flex flex-row">
+                                    <Image src={frame.logo} height={30} width={30} alt="logo" />
+                                    {frame.name}
+                                </li>))}
+                            {skills.frameworks.backend.map((frame, index) => (
+                                <li key={index} className="flex flex-row">
+                                    <Image src={frame.logo} height={30} width={30} alt="logo" />
+
+                                    {frame.name}
+                                </li>))}
                         </ul>
                     </div>
                     <div className="flex flex-col mx-3">
                         <h5 className="tertiary-heading">Databases</h5>
                         <ul className="body-text">
-                            {skills.database.map((db, index) => (<li key={index}>{db.name}</li>))}
+                            {skills.database.map((db, index) => (
+                                <li key={index} className="flex flex-row">
+                                    <Image src={db.logo} height={30} width={30} alt="logo" />
+                                    {db.name}
+                                </li>))}
                         </ul>
                     </div>
 
                     <div className="flex flex-col mx-3">
                         <h5 className="tertiary-heading">Technologies</h5>
                         <ul className="body-text">
-                            {skills.technology.map((tech, index) => (<li key={index}>{tech.name}</li>))}
+                            {skills.technology.map((tech, index) => (
+                                <li key={index} className="flex flex-row">
+                                    <Image src={tech.logo} height={30} width={30} alt="logo" />
+                                    {tech.name}
+                                </li>))}
                         </ul>
                     </div>
                 </div>
