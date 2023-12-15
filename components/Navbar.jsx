@@ -21,10 +21,10 @@ const Navbar = () => {
                 <button onClick={() => (setToggleDropdown(!toggleDropdown))}>
                     Menu
                 </button>
-                {toggleDropdown && <div className="absolute right-0 flex flex-col mt-3 w-full p-5 r min-w-[210px]  gap-2 justify-end items-end">
-                    <Link href="#About" className="  cursor-pointer pb-1.5 transition-all hover:font-bold">About</Link>
-                    <Link href="#Project" className="  cursor-pointer pb-1.5 transition-all hover:font-bold">Projects</Link>
-                    <Link href="https://drive.google.com/file/d/1ykDj1j0Zb3YCTLMGb7e_Xa7qon9YWk-I/view?usp=sharing" target="_blank" className="  cursor-pointer pb-1.5 transition-all hover:font-bold">Resume</Link>
+                {toggleDropdown && <div className="absolute transition-all right-0 flex flex-col mt-3 gap-2 justify-center items-center me-3 p-4 bg-white rounded-lg shadow-lg ">
+                    <Link href="#About" className="  cursor-pointer  transition-all hover:font-bold  rounded p-2">About</Link>
+                    <Link href="#Project" className="  cursor-pointer  transition-all hover:font-bold  rounded p-2">Projects</Link>
+                    <Link href="https://drive.google.com/file/d/1ykDj1j0Zb3YCTLMGb7e_Xa7qon9YWk-I/view?usp=sharing" target="_blank" className="  cursor-pointer pb-1.5 transition-all hover:font-bold  rounded p-2">Resume</Link>
                 </div>}
             </div>
         </nav>

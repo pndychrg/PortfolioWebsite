@@ -2,21 +2,28 @@ import { experience } from "@/constants/experience"
 import Image from "next/image"
 const Experience = () => {
     return (
-        <section className="flex flex-col justify-center items-center">
-            <h1 className="section-heading">Experience</h1>
-            <div className="flex flex-col">
+        <section className="flex flex-col justify-center items-center py-4" >
+            <h1 className="section-heading">
+                Experience
+            </h1>
+            <div className=" flex flex-col flex-wrap">
                 {experience.map((exp, index) => (
-                    <div key={index}>
-                        <h5 className="tertiary-heading">
-                            {exp.position}
-                            <span className="text-lg">({exp.start}-{exp.end})</span>
-                        </h5>
-                        <p className="body-text flex flex-row">
-                            <Image alt="logo" src={exp.logo} width={40} height={40} />
-                            {exp.company}
-                            <br />
-                        </p>
-                    </div>))}
+                    <div className="card-div curosr-default" key={index}>
+                        <div className="flex flex-row flex-wrap">
+                            <div className="flex flex-col me-4">
+                                <span className="tertiary-heading">
+                                    {exp.position}
+                                </span>
+                                <span className="body-text">
+                                    {exp.company}
+                                </span>
+                            </div>
+                            <div className="float-right">
+                                {`${exp.start} - ${exp.end}`}
+                            </div>
+                        </div>
+                    </div>
+                ))}
             </div>
         </section>
     )

@@ -5,8 +5,8 @@ const Hero = () => {
         // TODO decrease line height in mobile devices
         <section className="lg:py-10 py-3 ">
             <div className="flex flex-row items-center justify-around ">
-                <div className="font-bold">
-                    <h1 className="font-poppins text-5xl md:text-7xl lg:text-8xl leading-normal font-extrabold md:mb-5" >
+                <div className="font-bold pe-3">
+                    <h1 className="font-poppins text-5xl md:text-7xl lg:text-8xl  font-extrabold md:mb-5 " >
                         <span>Hello, I'm </span>
                         <br />
                         <span>Chirag Pandey</span>

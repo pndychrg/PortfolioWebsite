@@ -15,7 +15,7 @@ export const education = [
     startYear: "2020",
     endYear: "2024",
     field: "Programming and Data Science",
-    logo: "/svg/iitm.jpeg",
+    logo: "/svg/iitm.png",
   },
   {
     degree: "High Secondary Education",
